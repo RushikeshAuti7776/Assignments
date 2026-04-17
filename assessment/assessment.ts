@@ -11,7 +11,7 @@ let order : boolean = true || false ;
 console.log(`Assessment Q2 Whether a customer has placed an order:${order} or ${result}`);
 
 // Assessment Q3 Person's phone number: "123-456-7890"
-let number = "123-456-7890";
+let number: string = "123-456-7890";
 console.log(`Person's phone number: "${number}"`)
 
 // Assessment Q4 Amount of money in a customer's bank account: 1000.50
@@ -41,3 +41,89 @@ console.log(`Person's marital status: ${marital},${no_marital}`)
 console.log(`--------------------------------------------------`)
 let occupation : string="Software Engineer"
 console.log(`Person's occupation:"${occupation}"`)
+
+// Assessment Q9  Person's favourite colour: "Blue"
+console.log(`--------------------------------------------------`)
+let colour : string = "Blue"
+console.log(`Person's favourite colour: "${colour}"`)
+
+// Assessment Q10 Current year: 2023
+console.log(`--------------------------------------------------`)
+let today = new Date();
+console.log(`today`)
+
+// get time in IST
+let options = { timeZone: 'Asia/Kolkata'};
+const date = today.toLocaleTimeString(options);
+console.log(date);
+
+let year: number = 2023;
+console.log(`Current year: ${number}`);
+
+console.log(`---------------------------------------------------------------`);
+// 11.Number of followers on a social media platform: 1,000,000
+
+interface obj {
+    followers : string 
+}
+
+let Number3 : obj = {
+      followers : "1,000,000"
+}
+
+console.log(`Number of followers on a social media platform: "${Number3.followers}"`)
+
+console.log(`---------------------------------------------------------------`);
+
+
+// 12.Rating of a movie: 7.5
+let Rating : [number] = [7.5]
+console.log(`Rating of a movie: ${Rating}`);
+
+console.log(`---------------------------------------------------------------`);
+
+
+// 13.Person's blood type: 'A'
+//let Assessment : Map<string,string> = new Map();
+//Assessment.set("blood","A")
+
+let bloodgroup : string = "A"
+
+console.log(`Person's blood type: ${bloodgroup}`)
+
+interface Assessment {
+    Title : string 
+    country : string
+    color : string
+    birthplace : string
+    Numberemp : number
+    Distance : number
+    
+}
+
+let assv_alue : Assessment = {
+     Title : "To Kill a Mockingbird",
+     country : "United States",
+     color : "Brown",
+     birthplace : "New York City",
+     Numberemp : 500,
+     Distance : 200.5,
+   
+    
+}
+
+// 14.Title of a book: "To Kill a Mockingbird"
+console.log(`Title of a book: "${assv_alue.Title}"`)
+// 15.Number of employees in a company: 500
+console.log(`Number of employees in a company:${assv_alue.Numberemp}`)
+// 16.Time of an event: 2:30 PM
+let time : string = "2:30"
+console.log(`Time of an event:${time} PM`)
+// 17.Name of a country: "United States"
+console.log(`Name of a country:${assv_alue.country}`)
+// 18.Person's eye color: "Brown"
+console.log(`Person's eye color:${assv_alue.color}`)
+// 19.Person's birthplace: "New York City"
+console.log(`Person's birthplace: ${assv_alue.country}`)
+// 20. Distance between two cities: 200.5
+console.log(`Person's birthplace: ${assv_alue.Distance}`)

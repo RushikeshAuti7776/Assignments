@@ -54,8 +54,8 @@ console.log(`today`)
 
 // get time in IST
 let options = { timeZone: 'Asia/Kolkata'};
-const date = today.toLocaleTimeString(options);
-console.log(date);
+//const date = today.toLocaleTimeString(options);
+//console.log(date);
 
 let year: number = 2023;
 console.log(`Current year: ${number}`);

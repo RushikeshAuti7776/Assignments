@@ -39,6 +39,8 @@ console.log("the DTI ratio is less than 40%, the loan is approved");
     console.log("the loan is denied.")
 }
 
+console.log("--------------------------------------------------------")
+
 // Create common function and then based on below details, print whether user is eligible to get the loan
 // or not
 // customerName = "John Doe";
@@ -47,10 +49,37 @@ console.log("the DTI ratio is less than 40%, the loan is approved");
 // isEmployed = true;
 // debtToIncomeRatio = 35.0;
 
-function customer(customerName : string , creditScore : number , isEmployed : boolean , debtToIncomeRatio : number) : void{
-    customerName = "John Doe",
-    creditScore = 720,
-    income = 55000.0;
-    isEmployed = true;
-    debtToIncomeRatio = 35.0;  
+function customer
+(
+    customerName : string , 
+    creditScore : number , 
+    income : number,
+    isEmployed : boolean , 
+    debtToIncomeRatio : number
+)
+: void{
+ 
+console.log(`customer name is : ${customerName}`);
+
+if(creditScore > 750){
+console.log("the loan is automatically approved.");
+}else if(creditScore <= 750 && creditScore >= 650){
+if(income >= 50000 && isEmployed == true)  {
+console.log("the customer’s income is greater than $50,000 the loan is considered for customer.")
+console.log("customer is employed.")
+if(debtToIncomeRatio<40){
+console.log("the DTI ratio is less than 40%, the loan is approved");
+}else{
+    console.log("the DTI ratio is 40% or greater, the loan is denied.");
 }
+ }else{
+    console.log("Customer is unemployed, the loan is denied.")
+ }
+}else{
+    console.log("the loan is denied.")
+}
+
+
+}
+
+customer("John Doe",720 ,55000.0 , true ,45);

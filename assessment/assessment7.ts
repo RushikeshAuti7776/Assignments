@@ -19,4 +19,3 @@ for (const word of words) {
 }
 console.log("Uppercase Sentence is : " + uppercaseSentence.trim());
 
-export {};

@@ -15,4 +15,3 @@ for (let i: number = 0; i < words.length; i++) {
 
 console.log("Total words with Java are : " + count);
 
-export {};

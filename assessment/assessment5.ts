@@ -10,7 +10,7 @@ empData.set("Eva Green", [60000, 2, 3.5]);
 
 
 //Create empty Map to store hike percentages
-const hikeMap: Map<string, number> = new Map();
+const hike: Map<string, number> = new Map();
 
 // Calculate hike for each employee and store in hikeMap
 for (const key of empData.keys()) {
@@ -20,11 +20,11 @@ for (const key of empData.keys()) {
   const rating = data[2];
 
   const hikePercentage = calculateHike(baseSalary, experience, rating);
-  hikeMap.set(key, hikePercentage);
+  hike.set(key, hikePercentage);
 }
 
 console.log("Hike Percentage for each employee:");
-console.log(hikeMap);
+console.log(hike);
 
 
 // Function to calculate hike percentage
@@ -58,4 +58,3 @@ function calculateHike(
   return (hike / baseSalary) * 100;
 }
 
-export {};

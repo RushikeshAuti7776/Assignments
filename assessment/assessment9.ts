@@ -26,7 +26,7 @@ const n1: number = 5;   // Total number of rows for the pattern
 for (let i: number = 1; i <= n1; i++) {
 
     //empty line
-    let line: string = " ";
+     let line: string = " ";
 
     // Inner loop to print spaces before stars in each row
     for (let j: number = i; j < n1; j++) {
@@ -39,6 +39,8 @@ for (let i: number = 1; i <= n1; i++) {
 
     console.log(line);
 }
+
+console.log("--------------------------------------------------")
 
 
 

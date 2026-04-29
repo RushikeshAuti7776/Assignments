@@ -3,6 +3,7 @@ const paragraph: string =
 
 const words: string[] = paragraph.split(" ");
 
+ console.log(paragraph)
 // Get total count and index of 'Java' words
 let count: number = 0;
 

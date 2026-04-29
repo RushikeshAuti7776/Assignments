@@ -30,4 +30,3 @@ if (prime) {
     console.log(input+ " is not a prime number");
 }
 
-export {};

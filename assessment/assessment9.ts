@@ -42,7 +42,22 @@ for (let i: number = 1; i <= n1; i++) {
 
 console.log("--------------------------------------------------")
 
+const no1 : number = 5;
+for(let i : number = 1 ; i<=no1 ; i++){
+   //empty line
+     let line: string = " ";
 
+    for (let j: number = i; j < no1; j++) {
+        line += "";
+    }
+    
+    for(let j : number = 1; j<=i;j++){
+        line += "*";
+    }
+
+     console.log(line);
+    
+}
 
 
 
